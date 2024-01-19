@@ -1,4 +1,4 @@
-Don't pay GHL for premium and don't pay Zapier - they are vampires.
+Don't pay GHL (Go High Level) for premium and don't pay Zapier - they are vampires.
 
 I am sure you are wondering "How do I use this?"
 --------------------------------------------------------------------------------------------
