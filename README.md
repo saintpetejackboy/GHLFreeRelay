@@ -26,7 +26,7 @@ The script sits there and waits for data from GHL (A) that comes with the apikey
 
 What are the limitations?
 
-GHL has an API rate limit of about 100 per 10 seconds, or 200,000 per day. This if fairly generous. 200,000 requests through Zapier per day would bankrupt Jack Ma.
+GHL has an API rate limit of about 100 per 10 seconds, or 200,000 per day. This is fairly generous. 200,000 requests through Zapier per day would bankrupt Jack Ma.
 
 While this code is provided in PHP originally, it is easily translated to many langauges, so I will offer various other implementations in different areas here (eventually, maybe, feel free to add them yourselves).
 
