@@ -3,18 +3,18 @@ Don't pay GHL for premium and don't pay Zapier - they are vampires.
 
 I am sure you are wondering "How do I use this?"
 
-The instructions are very simple and all you need is:
+Get a VPS or some other server that can server PHP files (very easy, under $8 at most per month if you don't already have one). 
+Plop that index.php file into your server into a directory like /relay or /GHL/relay/index.php   - you don't need to modify it at all.
 
-1.) A server that can run PHP files (virtually any server, VPS costs $8 or less per month).
+You can use the same GHL (sub accounts) OR two entirely unrelated GHL accounts. Pretend GHL (A) wants to send contacts to GHL (B)...
 
-2.) One GHL (A) account you want to send contacts to another GHL (B) account - can be sub accounts or entirely unrelated
+From GHL (B), you must use the agency dashboard to get the apikey for that subaccount, copy it to your clipboard.
 
-3.) A workflow inside of GHL (A) that has ANY TRIGGER YOU WANT - can be a tag, contact created, etc.;
+In GHL (A), make a workflow with ANY TRIGGER YOU WANT. It can be contact created, a certain tag, doesn't matter. Have that workflow trigger a "webhook" to the URL we put the index.php in above.
 
-4.) This workflow sends a normal webhook with an extra custom field called "apikey" that has the value of GHL (B) apikey pasted in.
+Add a Custom Data to the webhook that has the name "apikey" and then paste the apikey in the value area. Save the workflow, and then test it before publishing.
 
-
-That's it! 
+That's it!
 
 
 Here is how it works:
@@ -22,6 +22,7 @@ Here is how it works:
 GHL is a scam MLM service and they want to charge you "premium" to do stuff like this. Second, Zapier (whom you likely would end up using at some point) is ALSO a garbage, incoherently expensive service.
 I hope people realize how easy it is to do this for virtually $0.
 
+The script sits there and waits for data from GHL (A) that comes with the apikey it needs to send the data to GHL (B). It doesn't do anything else, just that.
 
 What are the limitations?
 
@@ -32,3 +33,6 @@ While this code is provided in PHP originally, it is easily translated to many l
 This service does NOT send back the apikey, except in the header. If an invalid GHL API key is provided, nothing happens (if you are worried about bots crawling the script). 
 
 No data is saved and no retries are attempted (except on the part of GHL). This script could easily be modified to save data to an external database or perform other operations.
+
+
+** Special note: if you use some old PHP, you may need to enable libcurl - but I highly doubt it.
