@@ -6,16 +6,22 @@ I am sure you are wondering "How do I use this?"
 The instructions are very simple and all you need is:
 
 1.) A server that can run PHP files (virtually any server, VPS costs $8 or less per month).
+
 2.) One GHL (A) account you want to send contacts to another GHL (B) account - can be sub accounts or entirely unrelated
+
 3.) A workflow inside of GHL (A) that has ANY TRIGGER YOU WANT - can be a tag, contact created, etc.;
+
 4.) This workflow sends a normal webhook with an extra custom field called "apikey" that has the value of GHL (B) apikey pasted in.
 
+
 That's it! 
+
 
 Here is how it works:
 
 GHL is a scam MLM service and they want to charge you "premium" to do stuff like this. Second, Zapier (whom you likely would end up using at some point) is ALSO a garbage, incoherently expensive service.
 I hope people realize how easy it is to do this stuff for basically free.
+
 
 What are the limitations?
 
