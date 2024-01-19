@@ -20,7 +20,7 @@ That's it!
 Here is how it works:
 
 GHL is a scam MLM service and they want to charge you "premium" to do stuff like this. Second, Zapier (whom you likely would end up using at some point) is ALSO a garbage, incoherently expensive service.
-I hope people realize how easy it is to do this stuff for basically free.
+I hope people realize how easy it is to do this for virtually $0.
 
 
 What are the limitations?
